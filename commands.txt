@@ -1,6 +1,6 @@
 git status
 git ls-files
-git commit -m ""[Dhello"
+git commit -m "Hello"
 git branch jivan
 git checkout -b jivan
 git log 
