@@ -7,3 +7,5 @@ git log
 git log --one-line
 git show 
 git show --one-line
+git push 
+ssh -T git@github.com
