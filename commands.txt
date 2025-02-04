@@ -4,8 +4,9 @@ git commit -m "Hello"
 git branch jivan
 git checkout -b jivan
 git log 
-git log --one-line
+git log --oneline
 git show 
-git show --one-line
+git show --oneline
 git push 
 ssh -T git@github.com
+
