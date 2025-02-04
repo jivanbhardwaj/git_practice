@@ -1,0 +1,9 @@
+git status
+git ls-files
+git commit -m ""[Dhello"
+git branch jivan
+git checkout -b jivan
+git log 
+git log --one-line
+git show 
+git show --one-line
