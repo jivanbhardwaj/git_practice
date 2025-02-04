@@ -1,12 +1,13 @@
-git status
-git ls-files
+git init # to start working area space
+git status # to see the files in woraking area and staging area 
+git ls-files # to see the file in staging area
 git commit -m "Hello"
-git branch jivan
-git checkout -b jivan
-git log 
+git branch jivan  # to create the new branch name jivan
+git checkout -b jivan # to change the directory
+git log   # to see the all details of commit 
 git log --oneline
 git show 
 git show --oneline
 git push 
-ssh -T git@github.com
+ssh -T git@github.com  # it is to make connection between git local pc to github
 
