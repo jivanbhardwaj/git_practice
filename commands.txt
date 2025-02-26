@@ -10,4 +10,4 @@ git show
 git show --oneline
 git push 
 ssh -T git@github.com  # it is to make connection between git local pc to github
-
+git diff --cached --name-only
