@@ -9,7 +9,12 @@ jobs:
         - name: check-out
           uses: actions/checkout@v5
 
-        - name: Executing shell script
-          run:  ./bash.sh
+        - name: list all the file
+          run: ls -ltrh
+        - name: provide the enought pemission
+          run: chmod +x bash.sh
 
+
+        - name: Executing shell script
+          run:  ./.github/workflows/bash.sh
           
