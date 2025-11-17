@@ -1,0 +1,13 @@
+name: my_fist_workflow
+
+on: push
+
+jobs:
+    first-jobs:
+        runs-on: ubuntu-latest
+        steps: 
+        - name: welcome message
+          run: echo "Alice, you are most welcome"
+        - name: list thie file 
+          run: ls -ltrh
+          
