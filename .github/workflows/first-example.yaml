@@ -14,6 +14,6 @@ jobs:
            echo "Hello! alice how are you doing"
 
         - name: Generate Ascci Artwork
-          run: cowsay -f dragon "Run for art work, and save it to dragaon.txt" > dragon.txt
+          run: cowsay -f dragon "Run for art work, and save it to dragaon.txt" >> dragon.txt
 
           
