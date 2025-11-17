@@ -8,9 +8,14 @@ jobs:
         steps: 
         - name: check-out
           uses: actions/checkout@v5
-        - name: welcome message
-          run: echo "Alice, you are most welcome"
+        - name: List the all file and welcome message
+          run: |
         - name: list thie file 
           run: ls -ltrh
+        - name: Welcome message
+          run: echo "Hello! alice how are you doing"
+
+        - name: Generate Ascci Artwork
+          run: cowsay -f dragon "Run for art work, and save it to dragaon.txt" > dragon.txt
 
           
