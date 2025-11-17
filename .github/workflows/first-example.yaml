@@ -6,8 +6,11 @@ jobs:
     first-jobs:
         runs-on: ubuntu-latest
         steps: 
+        - name: check-out
+          uses: actions/checkout@v5
         - name: welcome message
           run: echo "Alice, you are most welcome"
         - name: list thie file 
           run: ls -ltrh
+
           
