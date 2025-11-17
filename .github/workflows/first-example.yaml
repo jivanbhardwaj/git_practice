@@ -8,17 +8,8 @@ jobs:
         steps: 
         - name: check-out
           uses: actions/checkout@v5
-        - name: List the all file and welcome message
-          run: |
-           ls -ltrh
-           echo "Hello! alice how are you doing"
-           sudo apt-get update && sudo apt-get install -y cowsay
 
-        - name: Generate Ascci Artwork
-          run: cowsay -f dragon "Run for art work, and save it to dragon.txt" >> dragon.txt
-        - name: Grep the file
-          run: grep -inr "dragon.txt"
-        - name: read the file file
-          run: cat dragon.txt
+        - name: Executing shell script
+          run: ./ascii-script.sh
 
           
