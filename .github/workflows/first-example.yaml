@@ -10,10 +10,8 @@ jobs:
           uses: actions/checkout@v5
         - name: List the all file and welcome message
           run: |
-        - name: list thie file 
-          run: ls -ltrh
-        - name: Welcome message
-          run: echo "Hello! alice how are you doing"
+           ls -ltrh
+           echo "Hello! alice how are you doing"
 
         - name: Generate Ascci Artwork
           run: cowsay -f dragon "Run for art work, and save it to dragaon.txt" > dragon.txt
