@@ -15,6 +15,10 @@ jobs:
            sudo apt-get update && sudo apt-get install -y cowsay
 
         - name: Generate Ascci Artwork
-          run: cowsay -f dragon "Run for art work, and save it to dragaon.txt" >> dragon.txt
+          run: cowsay -f dragon "Run for art work, and save it to dragon.txt" >> dragon.txt
+        - name: Grep the file
+          run: grep -inr "dragon.txt"
+        - name: read the file file
+          run: cat dragon.txt
 
           
