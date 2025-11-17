@@ -10,6 +10,6 @@ jobs:
           uses: actions/checkout@v5
 
         - name: Executing shell script
-          run:  ./jivanbhardwaj/git_practice/.github/workflows/ascii-script.sh
+          run:  ./bash.sh
 
           
