@@ -7,7 +7,7 @@ jobs:
         runs-on: ubuntu-latest
         steps: 
         - name: Install cowsay program
-          uses: sudo apt-get install cowsay -y
+          run: sudo apt-get install cowsay -y
         - name: Execute cowsay cmd
           run: cowsay -f dragon "run for cover" >> dragon.txt
         - name: Sleep for 30 sec
@@ -21,13 +21,13 @@ jobs:
           run: sleep 10
         - name: Test if file exist
           run: grep -irn "dragon" dragon.txt
-          
+
           
     deploy-jobs-3:
         runs-on: ubuntu-latest
         steps: 
         - name: Read the file
-          uses: cat dragon.txt
+          run: cat dragon.txt
         - name: Deploy
           run: echo Deploying ...
 
