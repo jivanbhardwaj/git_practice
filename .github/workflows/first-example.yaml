@@ -3,18 +3,32 @@ name: my_fist_workflow
 on: push
 
 jobs:
-    first-jobs:
+    build-jobs-1:
         runs-on: ubuntu-latest
         steps: 
-        - name: check-out
-          uses: actions/checkout@v5
+        - name: Install cowsay program
+          uses: sudo apt-get install cowsay -y
+        - name: Execute cowsay cmd
+          run: cowsay -f dragon "run for cover" >> dragon.txt
+        - name: Sleep for 30 sec
+          run: sleep 30
 
-        - name: list all the file
-          run: ls -ltrh
 
+    test-jobs-2:
+        runs-on: ubuntu-latest
+        steps: 
+        - name: Sleep for 10 sec
+          run: sleep 10
+        - name: Test if file exist
+          run: grep -irn "dragon" dragon.txt
+          
+          
+    deploy-jobs-3:
+        runs-on: ubuntu-latest
+        steps: 
+        - name: Read the file
+          uses: cat dragon.txt
+        - name: Deploy
+          run: echo Deploying ...
 
-        - name: Executing shell script
-          run: |
-           chmod +x .github/workflows/bash.sh
-           ./.github/workflows/bash.sh
           
