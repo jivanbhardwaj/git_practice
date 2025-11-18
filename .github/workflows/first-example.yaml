@@ -11,10 +11,10 @@ jobs:
 
         - name: list all the file
           run: ls -ltrh
-        - name: provide the enought pemission
-          run: chmod +x .github/workflows/bash.sh
 
 
         - name: Executing shell script
-          run:  ./.github/workflows/bash.sh
+          run: |
+           chmod +x .github/workflows/bash.sh
+           ./.github/workflows/bash.sh
           
