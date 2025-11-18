@@ -28,8 +28,10 @@ jobs:
         needs: [test-jobs-2]
         runs-on: ubuntu-latest
         steps: 
-        - name: Read the file
-          run: cat dragon.txt
+        - name: create a file
+          run: touch bob.txt
+        - name: list the file
+          run: grep -irn bob
         - name: Deploy
           run: echo Deploying ...
 
