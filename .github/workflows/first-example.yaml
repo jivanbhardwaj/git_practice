@@ -31,7 +31,7 @@ jobs:
         - name: create a file
           run: touch bob.txt
         - name: list the file
-          run: grep -irn bob
+          run: ls  -ltrha
         - name: Deploy
           run: echo Deploying ...
 
