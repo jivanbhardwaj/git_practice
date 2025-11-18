@@ -20,7 +20,7 @@ jobs:
         - name: Sleep for 10 sec
           run: sleep 10
         - name: Test if file exist
-          run: grep -irn "dragon" dragon.txt
+          run: grep -irn dragon.txt
 
           
     deploy-jobs-3:
