@@ -1,6 +1,6 @@
 name: my_fist_workflow
 
-on: push
+on: push 
 
 jobs:
     build-jobs-1:
@@ -24,8 +24,7 @@ jobs:
         - name: upload the dragon file
           uses: actions/download-artifact@v4
           with:
-           name: my-artifact
-           path: dragon.txt
+            name: my-artifact
         - name: Test if file exist
           run: ls -ltrha
 
@@ -38,7 +37,6 @@ jobs:
           uses: actions/download-artifact@v4
           with:
            name: my-artifact
-           path: dragon.txt
         - name: read the file
           run: |
            cd dragon.txt
