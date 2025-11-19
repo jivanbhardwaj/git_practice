@@ -39,7 +39,7 @@ jobs:
            name: my-artifact
         - name: read the file
           run: |
-           cd dragon.txt
+           cat dragon.txt
            ls -ltrh
         - name: Deploy
           run: echo Deploying ...
